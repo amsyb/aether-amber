@@ -1,0 +1,62 @@
+@use "./typography" as *;
+@use "./variables" as *;
+@use "./mixins" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  overflow: visible;
+}
+
+:root {
+  background-color: #080808;
+  contain: content;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-text;
+}
+
+a:visited {
+  color: inherit;
+}
+
+h1 {
+  font-family: "Bitter";
+  font-size: 40px;
+  color: $primary-text;
+
+  @include desktop {
+    font-size: 160px;
+  }
+}
+
+h2 {
+  font-family: "Bitter";
+  font-size: 24px;
+  color: $primary-text;
+
+  @include tablet {
+    font-size: 30px;
+  }
+}
+
+h3 {
+  font-family: "Bitter";
+  font-size: 25px;
+  color: $primary-text;
+
+  @include tablet {
+    font-size: 24px;
+  }
+}
+
+body {
+  font-family: "Bitter";
+  font-size: 16px;
+  color: $primary-text;
+}

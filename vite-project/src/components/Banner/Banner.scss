@@ -1,0 +1,11 @@
+@use "../../styles/global" as *;
+@use "../../styles/mixins" as *;
+
+.banner {
+  @include global-padding;
+  overflow: visible;
+}
+
+.banner_img {
+  width: 100%;
+}
